@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container mt-5 text-center">
+    <h2 class="mb-3">Welcome, {{ request.user.username }} 👋</h2>
+    <p class="lead text-muted">
+        You have successfully logged in to the <strong>HR Management System</strong>.
+    </p>
+    <p class="mt-3">
+        This platform allows Admins and HR Managers to manage student and employee details efficiently.
+        Use the navigation bar above to explore different sections of the system.
+    </p>
+
+    <hr class="my-4">
+
+    <p class="text-secondary fst-italic">
+        “Empowering organizations through smarter management and simplified workflows.”
+    </p>
+</div>
+
+{% endblock %}
